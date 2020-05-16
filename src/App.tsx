@@ -18,7 +18,12 @@ function App() {
   }, []);
   if (!feed) return <div>Loading</div>;
   if (feed instanceof Error)
-    return <pre>{JSON.stringify(feed?.message, null, 2)}</pre>;
+    return (
+      <div>
+        <h1>Blast! There was an error :/</h1>
+        <pre>{JSON.stringify(feed?.message, null, 2)}</pre>
+      </div>
+    );
   const feedContents = (feed as RootFeed).rss.channel;
   return (
     <section className="mw7 center">
