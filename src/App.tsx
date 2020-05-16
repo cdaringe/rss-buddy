@@ -2,7 +2,10 @@ import React from "react";
 import { RootFeed } from "./feed";
 var convert = require("xml-js");
 
-const FEED_URL = "/rss/5ec0621c8a93f8a57f8b45675ec061c38a93f8d67b8b4567.xml";
+const FEED_URL =
+  process.env.NODE_ENV === "development"
+    ? "/rss/5ec0621c8a93f8a57f8b45675ec061c38a93f8d67b8b4567.xml"
+    : "http://fetchrss.com/rss/5ec0621c8a93f8a57f8b45675ec061c38a93f8d67b8b4567.xml";
 
 function App() {
   const [feed, setFeed] = React.useState<any>("");
