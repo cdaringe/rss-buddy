@@ -1,0 +1,36 @@
+# @info
+name: master
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/JamesIves/github-pages-deploy-action#getting-started-airplane
+      - name: checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@master
+        with:
+          node-version: 13.8.0
+      - name: install
+        run: npm ci
+      - name: lint
+        run: npm run lint
+      - name: build
+        run: npm run build
+      # - name: test
+      #   run: npm run test
+      # @ref https://github.com/JamesIves/github-pages-deploy-action
+      - name: gh-pages
+        run: |
+          set -ex
+          NODE_DEBUG=gh-pages \
+          GH_TOKEN=${{ secrets.GH_TOKEN }} \
+          node \
+            -r perish \
+            -e "require('gh-pages').publish('build', { repo: 'https://' + process.env.GH_TOKEN + '@github.com/cdaringe/rss-buddy.git', user: { name: 'cdaringe', email: 'cdaringe@nope.com' } })"
