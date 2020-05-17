@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b7e94e09392c00201ad273799b9bc2d",
+    "revision": "b362b3766a898eadb49058fff4d65269",
     "url": "/rss-buddy/index.html"
   },
   {
-    "revision": "228cb12961261fc731cf",
+    "revision": "dbf6f114e1847b20d909",
     "url": "/rss-buddy/static/css/main.b5784d13.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rss-buddy/static/js/2.cf244f4b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "228cb12961261fc731cf",
-    "url": "/rss-buddy/static/js/main.09728377.chunk.js"
+    "revision": "dbf6f114e1847b20d909",
+    "url": "/rss-buddy/static/js/main.2a4d9277.chunk.js"
   },
   {
     "revision": "59ea7cb09dfa59d7314a",
