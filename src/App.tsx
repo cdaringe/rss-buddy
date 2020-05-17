@@ -37,7 +37,6 @@ function App() {
   const items = Array.isArray(feed) ? feed : toCompactFeed(feed as RootFeed);
   (window as any).feed = items;
   return (
-    // <section className="mw7 center">
     <section className=''>
       <h2 className="athelas f6 ph1 ph0-l mv0">The Onion Twitter</h2>
       {items.map((post, i) => {
