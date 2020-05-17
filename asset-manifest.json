@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rss-buddy/static/css/main.b5784d13.chunk.css",
-    "main.js": "/rss-buddy/static/js/main.2a4d9277.chunk.js",
-    "main.js.map": "/rss-buddy/static/js/main.2a4d9277.chunk.js.map",
+    "main.js": "/rss-buddy/static/js/main.7faf4279.chunk.js",
+    "main.js.map": "/rss-buddy/static/js/main.7faf4279.chunk.js.map",
     "runtime-main.js": "/rss-buddy/static/js/runtime-main.08c5bbdb.js",
     "runtime-main.js.map": "/rss-buddy/static/js/runtime-main.08c5bbdb.js.map",
     "static/js/2.cf244f4b.chunk.js": "/rss-buddy/static/js/2.cf244f4b.chunk.js",
     "static/js/2.cf244f4b.chunk.js.map": "/rss-buddy/static/js/2.cf244f4b.chunk.js.map",
     "index.html": "/rss-buddy/index.html",
-    "precache-manifest.88977e7d9baf6aa8fcf2dfb8c31b441b.js": "/rss-buddy/precache-manifest.88977e7d9baf6aa8fcf2dfb8c31b441b.js",
+    "precache-manifest.c48599cc5540c5ff37b3adead66ce4f6.js": "/rss-buddy/precache-manifest.c48599cc5540c5ff37b3adead66ce4f6.js",
     "service-worker.js": "/rss-buddy/service-worker.js",
     "static/css/main.b5784d13.chunk.css.map": "/rss-buddy/static/css/main.b5784d13.chunk.css.map",
     "static/js/2.cf244f4b.chunk.js.LICENSE.txt": "/rss-buddy/static/js/2.cf244f4b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.08c5bbdb.js",
     "static/js/2.cf244f4b.chunk.js",
     "static/css/main.b5784d13.chunk.css",
-    "static/js/main.2a4d9277.chunk.js"
+    "static/js/main.7faf4279.chunk.js"
   ]
 }
