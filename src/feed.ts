@@ -97,3 +97,15 @@ export interface RootFeed {
   _declaration: Declaration;
   rss: Rss;
 }
+
+export type CompactFeedItem = {
+  title: string;
+  date: string;
+  img: string;
+};
+export const toCompactFeed: (feed: RootFeed) => CompactFeedItem[] = (feed) =>
+  feed.rss.channel.item.map((post) => ({
+    title: post.title._text.replace(/(http.*)/g, ""),
+    img: post["media:content"]?._attributes?.url || "",
+    date: post.pubDate._text,
+  }));
